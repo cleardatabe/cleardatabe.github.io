@@ -44,27 +44,43 @@
 <div class="container">
     <div class="slide vertical-center">
         <div class="jumbotron">
-            <h1>
-                <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-                ClearData.be
-            </h1>
-
-            <ul class="list-unstyled">
-                <li>Data Gathering</li>
-                <li>Data Preparation</li>
-                <li>Statistical Analysis</li>
-                <li>Data Visualization</li>
-            </ul>
+            <div id="carousel" aria-hidden="true" class="hidden-xs slide carousel" data-ride="carousel" data-interval="7000">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="fig2.svg">
+                    </div>
+                    <div class="item">
+                        <img src="fig3.svg">
+                    </div>
+                    <div class="item">
+                        <img src="fig4.svg">
+                    </div>
+                </div>
+            </div>
+            <div style="display: block; float:left">
+                <h1><a href="#about">ClearData.be</a></h1>
+                <ul class="list-unstyled">
+                    <li><a href="#offering">Data Gathering</a></li>
+                    <li><a href="#offering">Data Preparation</a></li>
+                    <li><a href="#offering">Statistical Analysis</a></li>
+                    <li><a href="#offering">Data Visualization</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <a name="about">&nbsp;</a>
-    <div class="slide">
+    <div class="bc-slide">
         <h3>About us</h3>
         <h4>What do we do?</h4>
-        Our specialty is statistical data analysis, but we do much more than that. 
+        Our specialty is statistical data analysis, but we do much more than that. Our goal is to give you a clear insight in your data 
+		and tell the story behind the numbers.
 		We can be part of the whole process of data gathering, data preparation, statistical analysis 
-		and reporting or visualization of data. Also, we can coach people and give advice how to do specific analyses.
+		and reporting or visualization of data. Also, we can coach people and give advice on how to do specific analyses.
+		
+		
+		
+		
 		
 <p>See <a href="#offering">Our services</a> for more information.</p>
 		
@@ -75,8 +91,10 @@
             <li>map data from the world wide web
             <li>design experiments 
 			<li>merge messy data files into a clear data set
-			<li>look for associations between variables
 			<li>visualize patient data for group practices
+			<li>look for associations between variables
+			<li>look for trends during time
+			<li>perform specialized statistical analyses
             <li>coach people to do statistical analyses 
 			<li>help non-mathematical students with statistics
             <li>...</li>
@@ -86,70 +104,81 @@
         <h4>Who could we help?</h4>
 
         <p>
-            We think we can help a large number of people. 
-			In fact, anyone who has some (messy) data and wants to know the story behind it, or anyone who wants to know
-            something and does not know how to obtain this information can contact us.
+            We think we can help different people. 
+			In fact, anyone who has (messy) data and wants to know the story behind it, or anyone who has a research question and does not know how to obtain this information can contact us.
 			
-		<p> We can work for students, scientists, institutions, companies and group practices.</p>
+		<p> We can work for nonprofit organizations, companies, group practices, scientists and students. 
+			The subject of the data does not matter.
+			</p>
 
         
             
      
 
         <h4>Experiences</h4>
-        We have most experience with biological data, but can learn more about other fields too.
-        Most of the work is done by Ineke van Gremberghe (diploma’s: Master in Biotechnology, Master in Statistical Data
-        Analysis, PhD in Biology).
+        <p>
+        Most of the data analysis is done by Dr. Ineke van Gremberghe (Master in Biotechnology, Master in Statistical Data
+        Analysis, PhD in Biology). Ineke has worked at Ghent University as a biological scientist for six years and has experience with 
+		designing and performing experiments, statistical analysis, reporting and coaching students. She is author of 15 scientific papers 
+		and has given several presentations at international congresses.
+		Ineke has done specialized data analysis at Ghent University, KU Leuven and for a psychological group practice. 
+		She has most experience with descriptive analyses, regression analyses (e.g. general, generalized, multilevel,
+		time series), multivariate analyses and causal mediation analyses.
+        </p>
+        <p>
+            Benny Colyn works behind the scenes in a support role. He is an Application Architect with experience in relational and
+            non-relational databases, Java/Scala software development, Python scripting and basic web development.
+        </p>
+		
+		
 
     </div>
 
     <a name="offering">&nbsp;</a>
-    <div class="slide">
+    <div class="bc-slide">
         <h3>Our services</h3>
 
         
 
         <h4>Data Gathering</h4>
 
-        <p>When you want to know something but don’t have any data yet, we can help to collect this. We can for instance
-            design an experiment, gather data from surveys or collect data from the world wide web.
+        <p>When you have a research question but don’t have any data yet, we can help to collect data. We can for instance
+            design experiments, gather data from surveys or collect data from the world wide web.
         </p>
 
         <h4>Data Preparation</h4>
 
-        <p>When you have very ‘messy’ data (e.g. different excel files with different formats) we can create a clear
-            data set for you. Data preparation involves data manipulation, data combining and data cleansing. The data
+        <p>When you have very ‘messy’ data (e.g. different excel or text files in different formats) we can create a clear
+            data set for you. Data preparation involves data manipulation and data combining. Data
             manipulation involves performing various calculations and transformations to get the data in the desired
-            format.
-            Data combining is the process of integrating all the information. The data cleansing process is the whole of
-            all measures to improve data integrity and quality that are taken in the 3 first steps.
+            format. Data combining is the process of integrating all data files. 
         </p>
 
         <h4>Statistical Analysis</h4>
 
-        <p> An important part of our work is statistical data analysis. We work normally with the freely available software R, but can
-            also work with SAS or SPSS. We can do descriptive analyses, regression analyses (e.g. general, generalized, random effects,
-            longitudinal data), multivariate analyses, and causal mediation analyses. Other statistical methods can be
-            discussed.
+        <p> An important part of our work is statistical data analysis. We normally work with the freely available software R, but can
+            also work with SAS or SPSS. We have most experience with descriptive analyses, regression analyses (e.g. general, generalized, multilevel,
+            time series), multivariate analyses and causal mediation analyses, but other statistical methods can also be done. 
         </p>
 
-        <h4>Data Visualization</h4>
+        <h4>Data Visualization and Reporting</h4>
 
-        <p>The data is visualized by clear figures, which is part of the descriptive analyses.
-		The statistical analyses performed and the results obtained are explained in a detailed report if preferred. </p>
+        <p>Data visualization is very important in understanding the story within your data. We visualize your data by clear figures, which is part of the descriptive analyses.
+		All statistical analyses performed and the results obtained are explained in a detailed report, and/or a presentation is given if preferred. </p>
 			
-		<h4>Teaching, coaching and advice</h4>
+		<h4>Teaching and Advice</h4>
 
-        <p> Statistics is not an easy course for some students with few mathematical background. We can help students who
-            follow non-mathematical studies by teaching statistics or helping with statistical analysis.
-            Some people want practical advice on how to do a specific analysis in R, SAS or SPSS. 
-			We can coach and give advice on the analyses described before in 'Statistical Analysis'.
+        <p> We can give advice on which statistical methods you should use and teach how to do specific analyses in practice. 
+		Also, a presentation on a statistical subject can be given for a group. 
+
+			Statistics is not an easy course for some students with few mathematical background. We can help students who
+            follow non-mathematical studies by teaching statistics or helping them with statistical analyses.
         </p>
 
     </div>
 
     <a name="contact">&nbsp;</a>
-    <div class="slide">
+    <div class="bc-slide">
         <h3>Contact</h3>
 
         <dl class="dl-horizontal">
